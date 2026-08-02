@@ -1,5 +1,8 @@
 package com.example.discover237.data.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Attraction(
     val id: String,
     val regionId: String,
