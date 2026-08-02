@@ -1,0 +1,102 @@
+[
+  {
+    "id": "adamawa",
+    "name": "Adamawa",
+    "capital": "Ngaoundéré",
+    "population": "1,124,000",
+    "description": "A high plateau region straddling the boundary between Cameroon's forested south and savanna north, known for cool climate, rolling hills, and cattle herding.",
+    "funFact": "Adamawa is nicknamed the 'water tower of Cameroon' because many of the country's major rivers originate on its plateau.",
+    "mapX": 55,
+    "mapY": 45
+  },
+  {
+    "id": "centre",
+    "name": "Centre",
+    "capital": "Yaoundé",
+    "population": "3,905,000",
+    "description": "Home to Yaoundé, Cameroon's political capital, built across seven hills and surrounded by dense forest.",
+    "funFact": "Yaoundé is often called the 'city of seven hills' due to its distinctive hilly terrain.",
+    "mapX": 50,
+    "mapY": 60
+  },
+  {
+    "id": "east",
+    "name": "East",
+    "capital": "Bertoua",
+    "population": "830,000",
+    "description": "Cameroon's largest region by area, covered mostly by dense equatorial rainforest and home to indigenous Baka communities.",
+    "funFact": "The East region contains the Dja Faunal Reserve, a UNESCO World Heritage Site almost untouched by human activity.",
+    "mapX": 70,
+    "mapY": 55
+  },
+  {
+    "id": "far-north",
+    "name": "Far North",
+    "capital": "Maroua",
+    "population": "3,796,000",
+    "description": "Cameroon's hottest and driest region, marked by the rugged Mandara Mountains and Sahelian savanna landscapes.",
+    "funFact": "The Far North is home to the Kapsiki people and the dramatic volcanic spires of the Rhumsiki area.",
+    "mapX": 50,
+    "mapY": 10
+  },
+  {
+    "id": "littoral",
+    "name": "Littoral",
+    "capital": "Douala",
+    "population": "3,178,000",
+    "description": "Cameroon's smallest region by area but its economic powerhouse, home to Douala, the country's largest city and main port.",
+    "funFact": "Despite its small size, Littoral has the highest population density of any Cameroonian region.",
+    "mapX": 30,
+    "mapY": 55
+  },
+  {
+    "id": "north",
+    "name": "North",
+    "capital": "Garoua",
+    "population": "2,297,000",
+    "description": "A vast savanna region along the Benoue River, known for cotton farming, cattle, and protected wildlife areas.",
+    "funFact": "The North region hosts Benoue National Park, one of Cameroon's most important wildlife reserves.",
+    "mapX": 50,
+    "mapY": 25
+  },
+  {
+    "id": "northwest",
+    "name": "Northwest",
+    "capital": "Bamenda",
+    "population": "1,906,000",
+    "description": "An English-speaking highland region famous for its grassfields kingdoms, cool climate, and scenic mountain roads.",
+    "funFact": "The Northwest is home to the Bamenda Ring Road, a scenic 367 km loop through highland villages and volcanic lakes.",
+    "mapX": 25,
+    "mapY": 45
+  },
+  {
+    "id": "south",
+    "name": "South",
+    "capital": "Ebolowa",
+    "population": "773,000",
+    "description": "A lush, sparsely populated equatorial forest region along the Atlantic coast, bordering Gabon and Equatorial Guinea.",
+    "funFact": "The South region's Lobé Falls is one of the very few waterfalls in the world that flows directly into the ocean.",
+    "mapX": 45,
+    "mapY": 80
+  },
+  {
+    "id": "southwest",
+    "name": "Southwest",
+    "capital": "Buea",
+    "population": "1,503,000",
+    "description": "An English-speaking coastal region dominated by Mount Cameroon, the highest peak in West Africa.",
+    "funFact": "Mount Cameroon is an active volcano and the highest point in West Africa at 4,040 m.",
+    "mapX": 22,
+    "mapY": 62
+  },
+  {
+    "id": "west",
+    "name": "West",
+    "capital": "Bafoussam",
+    "population": "1,875,000",
+    "description": "A densely populated highland region home to the Bamileke people, known for its many traditional royal chiefdoms.",
+    "funFact": "The West region has one of the highest concentrations of traditional royal palaces in Cameroon.",
+    "mapX": 32,
+    "mapY": 48
+  }
+]
