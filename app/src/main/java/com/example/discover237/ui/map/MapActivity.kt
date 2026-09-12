@@ -9,15 +9,13 @@ import com.example.discover237.R
 import com.example.discover237.data.DataLoader
 import com.example.discover237.ui.attractionList.AttractionListActivity
 
-class MapActivity: AppCompatActivity() {
-
-    lateinit var container: LinearLayout
+class MapActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
-        container = findViewById(R.id.regionButtonContainer)
+        val container: LinearLayout = findViewById(R.id.regionButtonContainer)
         val regions = DataLoader.loadRegions(this)
 
         for (region in regions) {
