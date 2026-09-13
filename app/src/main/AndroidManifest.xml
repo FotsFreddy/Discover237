@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".ui.facts.FactsActivity" android:exported="false" />
         <activity android:name=".ui.map.MapActivity" android:exported="false" />
+        <activity android:name=".ui.attractionList.AttractionListActivity" android:exported="false" />
+        <activity android:name=".ui.attractionDetails.AttractionDetailActivity"/>
     </application>
 
 </manifest>
