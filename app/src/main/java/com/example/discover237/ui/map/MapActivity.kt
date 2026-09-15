@@ -2,8 +2,9 @@ package com.example.discover237.ui.map
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.discover237.R
 import com.example.discover237.data.DataLoader
@@ -15,20 +16,29 @@ class MapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
-        val container: LinearLayout = findViewById(R.id.regionButtonContainer)
         val regions = DataLoader.loadRegions(this)
 
-        for (region in regions) {
-            val button = Button(this).apply {
-                text = region.name
-                setOnClickListener {
-                    val intent = Intent(this@MapActivity, AttractionListActivity::class.java)
-                    intent.putExtra("regionId", region.id)
-                    intent.putExtra("regionName", region.name)
-                    startActivity(intent)
-                }
+        val mapView: RegionMapView = findViewById(R.id.regionMapView)
+        mapView.regions = regions
+        mapView.onRegionTapped = { region ->
+            Toast.makeText(this, "You've chosen the ${region.name} region", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, AttractionListActivity::class.java)
+            intent.putExtra("regionId", region.id)
+            intent.putExtra("regionName", region.name)
+            startActivity(intent)
+        }
+
+        val legendContainer: LinearLayout = findViewById(R.id.legendContainer)
+        regions.forEachIndexed { index, region ->
+            val letter = ('A' + index).toString()
+            val row = TextView(this).apply {
+                text = "$letter — ${region.name}"
+                textSize = 14f
+                setTextColor(resources.getColor(R.color.forest_green, theme))
+                setPadding(0, 8, 0, 8)
             }
-            container.addView(button)
+            legendContainer.addView(row)
         }
     }
 }
