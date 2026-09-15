@@ -9,28 +9,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/off_white"
-        tools:layout_editor_absoluteX="210dp">
+        android:paddingTop="40dp"
+        tools:layout_editor_absoluteY="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:gravity="top"
-                android:text="Select a Region"
+                android:layout_marginBottom="12dp"
+                android:text="Tap a Region"
                 android:textColor="@color/forest_green"
-                android:textSize="22sp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cameroon_map_outline" />
+
+                <com.example.discover237.ui.map.RegionMapView
+                    android:id="@+id/regionMapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text=""
+                android:textColor="@color/forest_green"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/regionButtonContainer"
+                android:id="@+id/legendContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
