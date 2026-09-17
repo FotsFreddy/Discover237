@@ -61,6 +61,13 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/detailDistanceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"/>
+
+                <TextView
                     android:id="@+id/detailFullDescText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

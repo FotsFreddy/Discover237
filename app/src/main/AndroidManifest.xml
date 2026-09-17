@@ -25,5 +25,7 @@
         <activity android:name=".ui.attractionList.AttractionListActivity" android:exported="false" />
         <activity android:name=".ui.attractionDetails.AttractionDetailActivity"/>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
 </manifest>
