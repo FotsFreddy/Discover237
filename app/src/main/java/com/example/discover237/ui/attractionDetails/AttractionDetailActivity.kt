@@ -21,7 +21,6 @@ class AttractionDetailActivity : AppCompatActivity() {
 
     private var isFavorited = false
     private lateinit var attractionId: String
-    private lateinit var attractionLat: String
     private var targetLat = 0.0
     private var targetLng = 0.0
 
@@ -93,10 +92,10 @@ class AttractionDetailActivity : AppCompatActivity() {
         fusedLocationClient.getCurrentLocation(
             Priority.PRIORITY_HIGH_ACCURACY,
             cancellationTokenSource.token
-        ).addOnSuccessListener { location ->
+        ).addOnSuccessListener { userLocation ->
             val distanceText = findViewById<TextView>(R.id.detailDistanceText)
-            if (location != null) {
-                val distanceKm = haversineDistance(location.latitude, location.longitude, targetLat, targetLng)
+            if (userLocation != null) {
+                val distanceKm = haversineDistance(userLocation.latitude, userLocation.longitude, targetLat, targetLng)
                 distanceText.text = "%.1f km away".format(distanceKm)
             } else {
                 distanceText.text = "Location unavailable"
@@ -104,11 +103,11 @@ class AttractionDetailActivity : AppCompatActivity() {
         }
     }
 
-    private fun haversineDistance(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {
+    private fun haversineDistance(userLat: Double, userLong: Double, targetLat: Double, targetLong: Double): Double {
         val earthRadiusKm = 6371.0
-        val dLat = Math.toRadians(lat2 - lat1)
-        val dLon = Math.toRadians(lon2 - lon1)
-        val a = sin(dLat / 2).pow(2) + cos(Math.toRadians(lat1)) * cos(Math.toRadians(lat2)) * sin(dLon / 2).pow(2)
+        val dLat = Math.toRadians(targetLat - userLat)
+        val dLon = Math.toRadians(targetLong - userLong)
+        val a = sin(dLat / 2).pow(2) + cos(Math.toRadians(userLat)) * cos(Math.toRadians(targetLat)) * sin(dLon / 2).pow(2)
         val c = 2 * atan2(sqrt(a), sqrt(1 - a))
         return earthRadiusKm * c
     }

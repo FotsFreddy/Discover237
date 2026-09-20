@@ -23,9 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:text="Tap a Region"
-                android:textColor="@color/forest_green"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                style="@style/TextHeadline" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -49,10 +47,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="8dp"
-                android:text=""
-                android:textColor="@color/forest_green"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:text="Legend"
+                style="@style/TextTitle" />
 
             <LinearLayout
                 android:id="@+id/legendContainer"

@@ -38,9 +38,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=""
-                        android:textColor="@color/forest_green"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        style="@style/TextHeadline" />
 
                     <ImageButton
                         android:id="@+id/favoriteButton"
@@ -57,15 +55,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text=""
-                    android:textColor="@color/crimson_red"
-                    android:textSize="14sp" />
+                    style="@style/TextAccentCrimson" />
 
                 <TextView
                     android:id="@+id/detailDistanceText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:textSize="16sp"/>
+                    style="@style/TextSecondary"/>
 
                 <TextView
                     android:id="@+id/detailFullDescText"
@@ -73,16 +70,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text=""
-                    android:textColor="@color/forest_green"
-                    android:textSize="16sp" />
+                    style="@style/TextBody" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="Did you know?"
-                    android:textColor="@color/warm_gold"
-                    android:textStyle="bold" />
+                    style="@style/TextAccentGold" />
 
                 <TextView
                     android:id="@+id/detailFunFactText"
@@ -90,8 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text=""
-                    android:textColor="@color/forest_green"
-                    android:textSize="14sp" />
+                    style="@style/TextBody" />
 
             </LinearLayout>
         </LinearLayout>

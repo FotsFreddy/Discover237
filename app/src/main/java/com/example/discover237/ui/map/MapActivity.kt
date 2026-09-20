@@ -34,8 +34,7 @@ class MapActivity : AppCompatActivity() {
             val letter = ('A' + index).toString()
             val row = TextView(this).apply {
                 text = "$letter — ${region.name}"
-                textSize = 14f
-                setTextColor(resources.getColor(R.color.forest_green, theme))
+                setTextAppearance(R.style.TextSecondary)
                 setPadding(0, 8, 0, 8)
             }
             legendContainer.addView(row)

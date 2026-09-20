@@ -40,14 +40,7 @@ class AttractionListActivity : AppCompatActivity() {
         val regionId = intent.getStringExtra("regionId") ?: return
         val regionName = intent.getStringExtra("regionName") ?: ""
 
-        findViewById<TextView>(R.id.regionTitleText).text = regionName
-//z
-//        val region = DataLoader.loadRegions(this).firstOrNull { it.id == regionId }
-//        if (region != null) {
-//            findViewById<TextView>(R.id.regionHeadCityText).text = "Head city: ${region.capital}"
-//            findViewById<TextView>(R.id.regionPopulationText).text = "Population: ${region.population} people"
-//            findViewById<TextView>(R.id.regionDescriptionText).text = "Quick description: ${region.description}"
-//        }
+        findViewById<TextView>(R.id.regionTitleText).text = "${regionName} region top attractions"
 
         filteredAttractions = DataLoader.loadAttractions(this).filter { it.regionId == regionId }
 

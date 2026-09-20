@@ -6,4 +6,44 @@
         <item name="cornerSizeBottomLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
+
+    <!-- Screen-level main headings: "Tap a Region", region name bar, attraction name in Detail -->
+    <style name="TextHeadline">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/forest_green</item>
+    </style>
+
+    <!-- Sub-headings: attraction name in list rows, "Legend" label -->
+    <style name="TextTitle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/forest_green</item>
+    </style>
+
+    <!-- Body/description text: attraction descriptions, full descriptions, fact bodies -->
+    <style name="TextBody">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <!-- Secondary/meta text: short descriptions in list, legend entries -->
+    <style name="TextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <!-- Emphasized accent labels: opening hours -->
+    <style name="TextAccentCrimson">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/crimson_red</item>
+    </style>
+
+    <!-- "Did you know?" label -->
+    <style name="TextAccentGold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/warm_gold</item>
+    </style>
 </resources>
