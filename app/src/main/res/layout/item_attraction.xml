@@ -41,9 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text=""
-                android:textColor="@color/forest_green"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                style="@style/TextTitle" />
 
             <ImageView
                 android:id="@+id/favoriteIndicator"
@@ -59,15 +57,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="14sp"
-            android:textColor="@color/black"/>
+            style="@style/TextSecondary"/>
 
         <TextView
             android:id="@+id/attractionOpeningHours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="@color/crimson_red"
             android:textSize="14sp" />
 
 
