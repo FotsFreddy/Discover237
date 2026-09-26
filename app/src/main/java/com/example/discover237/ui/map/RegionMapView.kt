@@ -25,18 +25,18 @@ class RegionMapView(context: Context, attrs: AttributeSet?) : View(context, attr
     private val boxHeight = 60f
 
     private val boxPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = "#005A44".toColorInt() // forest_green
+        color = "#005A44".toColorInt()
         style = Paint.Style.FILL
     }
 
     private val borderPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = "#F2C113".toColorInt() // warm_gold
+        color = "#F2C113".toColorInt()
         style = Paint.Style.STROKE
         strokeWidth = 4f
     }
 
     private val labelPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = "#F9F9F6".toColorInt() // off_white
+        color = "#F9F9F6".toColorInt()
         textSize = 36f
         textAlign = Paint.Align.CENTER
         isFakeBoldText = true
